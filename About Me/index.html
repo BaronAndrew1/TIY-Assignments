@@ -5,10 +5,6 @@
   <title>About Me</title>
 </head>
 
-<script type="text/javascript">
-document.getElementsByTagName("BODY").style.fontFamily("Verdana,sans-serif");
-</script>
-
 <body>
   <h1>About Me</h1>
 
@@ -19,8 +15,39 @@ document.getElementsByTagName("BODY").style.fontFamily("Verdana,sans-serif");
     <li>Favorite Food: <span id="food"></span></li>
   </ul>
 
+  <script>
+
+  var body = document.querySelector("body");
+  body.style.fontFamily = "verdana", "sans-serif";
+
+  var myName = document.getElementById("fullname");
+  myName.textContent="Andrew Baron";
+
+  var myLocation = document.getElementById("hometown");
+  myLocation.textContent="Orlando";
+
+  var myFaveMov = document.getElementById("movie");
+  myFaveMov.textContent="Avatar";
+
+  var myFood = document.getElementById("food");
+  myFood.textContent="Chicken Marsala";
+
+  var liItems = document.getElementsByTagName("li");
+
+  for (var mycounter=0; mycounter<liItems.length; mycounter++){
+    liItems[mycounter].className = "listitem";
+    liItems[mycounter].style="color:red";
+  }
+
+  var myImage = new Image();
+  myImage.src="Image.jpg";
+
+  body.appendChild(myImage)
+
+
+
+
+  </script>
+
  </body>
 </html>
-
-getElementById()
-http://networking.mydesigntool.com/viewtopic.php?tid=367&id=31

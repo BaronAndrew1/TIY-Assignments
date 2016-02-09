@@ -5,6 +5,17 @@ function verbing(token) {
         token.pop();
         console.log(token);
 }
-    else{token.pop()
-
+    else{token.push(token + "ly")
+      token.pop();
+      console.log(token);
 }
+
+function verbing (word) {
+  if (word.length < 3) return word;
+  if (word.slice(-3) === 'ing'){
+      return word + "ly";
+  } else {
+      return word + "ing";
+  }
+}
+console.log(verbing(""));
