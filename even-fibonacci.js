@@ -10,7 +10,7 @@ for(i=2; i<=33; i++)
     if (fib[i] % 2 === 0)
 
     {
-       x = x + fib[i];
+    x = x + fib[i];
     console.log(fib[i]);
     }
 }
