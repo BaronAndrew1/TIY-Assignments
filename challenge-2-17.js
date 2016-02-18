@@ -2,17 +2,17 @@ var es = "spanish";
 var de = "german";
 var en = "english";
 function helloWorld(code){
-  if (code == es){
+  if (code === es){
     console.log("HOLA!");
   }
-  if (code == de){
+  else if (code === de){
     console.log("GUTEN TAG!");
   }
-  if (code == en){
+  else if (code === en){
     console.log("Hello");
   }
-  else if(code !== es || de || en){
+  else{
     console.log("Hello");
   }
 }
-helloWorld(es)
+helloWorld()
