@@ -1,5 +1,17 @@
-var array = ["red", "blue", "green", "yellow"];
-var order = ["1st", "2nd", "3rd", "4th"]
+var array = ["red", "blue", "green", "yellow", "orange"];
 for(var i = 0; i<array.length; i++){
-    console.log("my " + order[i] + " favorite color is " + array[i])
+  var number = (i+1);
+    if (number === 1){
+      number = number + "st";
+    }
+    if (number === 2){
+      number = number + "nd";
+    }
+    if (number === 3){
+      number = number + "rd";
+    }
+    if (number > 3){
+      number = number + "th";
+    }
+    console.log("my " + number + " favorite color is " + array[i]);
 }
