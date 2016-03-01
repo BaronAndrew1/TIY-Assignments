@@ -1,0 +1,17 @@
+$color: red;
+
+h1{
+  color: lighten($color, 40%);
+}
+p{
+  color: darken($color, 20%);
+}
+ul{
+  color:teal;
+  li{
+    color: $color;
+    &:hover{
+      color:blue;
+    }
+  }
+}

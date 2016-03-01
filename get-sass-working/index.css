@@ -1,0 +1,14 @@
+h1 {
+  color: #ffcccc; }
+
+p {
+  color: #990000; }
+
+ul {
+  color: teal; }
+  ul li {
+    color: red; }
+    ul li:hover {
+      color: blue; }
+
+/*# sourceMappingURL=index.css.map */
