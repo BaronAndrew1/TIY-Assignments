@@ -11,6 +11,8 @@ alphaSort('webmaster');
 
 // CHALLENGE 2!!!
 
+// Used code from https: //developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+
 function longestCountry(str){
   var countries = str.split(", ");
   countries.sort(function(a,b){
